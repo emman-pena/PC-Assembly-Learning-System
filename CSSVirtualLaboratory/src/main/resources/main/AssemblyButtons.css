@@ -1,0 +1,12 @@
+
+.button {
+    
+    -fx-background-color: #121212;
+    
+}
+
+.button:hover {
+    
+    -fx-background-color:  #6CD0FF;
+    -fx-effect: dropshadow(gaussian, #6CD0FF, 5, 0, 0, 0);
+}

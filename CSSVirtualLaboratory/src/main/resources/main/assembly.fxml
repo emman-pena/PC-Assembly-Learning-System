@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="865.0" prefWidth="1165.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.AssemblyController">
+   <center>
+      <Pane prefHeight="695.0" prefWidth="562.0" style="-fx-background-color: #121212;" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle fx:id="systemChassis" arcHeight="5.0" arcWidth="5.0" fill="#464646" height="642.0" layoutX="5.0" layoutY="11.0" stroke="#363636" strokeType="INSIDE" strokeWidth="5.0" width="522.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#171717" height="164.0" layoutX="38.0" layoutY="432.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" width="151.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#171717" height="188.0" layoutX="292.0" layoutY="409.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" width="211.0" />
+            <Rectangle fx:id="pcCase" arcHeight="5.0" arcWidth="5.0" fill="#171717" height="355.0" layoutX="17.0" layoutY="26.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" width="434.0" />
+            <Rectangle fx:id="cpuPos" arcHeight="5.0" arcWidth="5.0" fill="#2197ff00" height="75.0" layoutX="295.0" layoutY="151.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="85.0" />
+            <Rectangle fx:id="cpuBounds" arcHeight="5.0" arcWidth="5.0" fill="#2197ff00" height="385.0" layoutX="5.0" layoutY="11.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="458.0" />
+            <Rectangle fx:id="coinCellPos" arcHeight="5.0" arcWidth="5.0" fill="#2197ff00" height="50.0" layoutX="98.0" layoutY="261.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="50.0" />
+            <Rectangle fx:id="ramPos" arcHeight="5.0" arcWidth="5.0" fill="#2197ff00" height="125.0" layoutX="64.0" layoutY="86.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="15.0" />
+            <Rectangle fx:id="hardDiskPos" arcHeight="5.0" arcWidth="5.0" fill="#2197ff" height="143.0" layoutX="47.0" layoutY="443.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="132.0" />
+            <Rectangle fx:id="powerSupplyPos" arcHeight="5.0" arcWidth="5.0" fill="#2197ff" height="166.0" layoutX="302.0" layoutY="420.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="189.0" />
+            <Rectangle fx:id="outerPartsBounds" arcHeight="5.0" arcWidth="5.0" fill="#2197ff00" height="237.0" layoutX="24.0" layoutY="399.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="485.0" />
+         </children>
+      </Pane>
+   </center>
+   <left>
+      <Pane prefHeight="679.0" prefWidth="624.0" style="-fx-background-color: #121212;" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle fx:id="motherboard" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="224.0" layoutX="15.0" layoutY="16.0" onDragDetected="#handleButtonAction" stroke="BLACK" strokeType="INSIDE" width="232.0" />
+            <Pane fx:id="pic" layoutX="165.0" layoutY="188.0" prefHeight="15.0" prefWidth="16.0" />
+            <Rectangle fx:id="cpu" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="175.0" layoutX="265.0" layoutY="16.0" stroke="BLACK" strokeType="INSIDE" width="184.0" />
+            <Rectangle fx:id="coinCell" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="174.0" layoutX="15.0" layoutY="261.0" stroke="BLACK" strokeType="INSIDE" width="173.0" />
+            <Pane fx:id="picCPU" layoutX="219.0" layoutY="319.0" prefHeight="20.0" prefWidth="26.0" />
+            <Rectangle fx:id="ram" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="174.0" layoutX="203.0" layoutY="261.0" stroke="BLACK" strokeType="INSIDE" width="27.0" />
+            <Rectangle fx:id="hardDisk" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="174.0" layoutX="15.0" layoutY="463.0" stroke="BLACK" strokeType="INSIDE" width="173.0" />
+            <Rectangle fx:id="powerSupply" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="174.0" layoutX="203.0" layoutY="463.0" stroke="BLACK" strokeType="INSIDE" width="173.0" />
+         </children>
+      </Pane>
+   </left>
+   <bottom>
+      <Pane prefHeight="147.0" prefWidth="1165.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox layoutX="19.0" layoutY="13.0" prefHeight="122.0" prefWidth="1064.0" style="-fx-background-color: #121212;">
+               <children>
+                  <VBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#switchToPrimary" prefHeight="25.0" prefWidth="71.0" stylesheets="@AssemblyButtons.css" text="Back" textFill="#7d7d7d" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="122.0" prefWidth="835.0">
+                     <children>
+                        <Label text="Motherboard Assembly" textFill="#f5f5fa">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="393.0" text="Drag the parts to their respective position in the motherboard" textFill="#7d7d7d">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="BOTTOM_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <StackPane prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="onButton" mnemonicParsing="false" onMouseClicked="#switchToFinishDialog" stylesheets="@SpecialButton.css" text="Next" textFill="#f5f5fa">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                              <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #121212;" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </bottom>
+   <top>
+      <AnchorPane fx:id="topPane" prefHeight="58.0" prefWidth="1165.0" style="-fx-background-color: linear-gradient(#216aa0, #000000);" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnClose" layoutX="568.0" layoutY="-1.0" mnemonicParsing="false" onMouseClicked="#closeWindow" prefHeight="39.0" prefWidth="30.0" stylesheets="@titleBarButtons.css" text="x" textFill="#f5f5fa" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnMaximize" layoutX="533.0" layoutY="-1.0" mnemonicParsing="false" onMouseClicked="#maximizeWindow" prefHeight="40.0" prefWidth="35.0" stylesheets="@titleBarButtons.css" text="❒" textFill="#f5f5fa" AnchorPane.rightAnchor="33.0" />
+            <Button fx:id="btnMinimize" layoutX="498.0" mnemonicParsing="false" onMouseClicked="#minimizeWindow" prefHeight="35.0" prefWidth="35.0" stylesheets="@titleBarButtons.css" text="-" textFill="#f5f5fa" AnchorPane.rightAnchor="66.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

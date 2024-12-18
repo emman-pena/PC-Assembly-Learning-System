@@ -1,0 +1,33 @@
+
+.button {
+    
+    -fx-background-radius: 25px;
+    -fx-background-color: #182334;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 50px;
+}
+
+.button:hover {
+    
+    -fx-background-color:  #6CD0FF;
+    -fx-effect: dropshadow(gaussian, #6CD0FF, 5, 0, 0, 0);
+    -fx-pref-width: 100px;
+    -fx-pref-height: 50px;
+}
+
+
+.label {
+    
+    -fx-background-radius: 25px;
+    -fx-background-color: #182334;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 50px;
+}
+
+.label:hover {
+    
+    -fx-background-color:  #6CD0FF;
+    -fx-effect: dropshadow(gaussian, #6CD0FF, 5, 0, 0, 0);
+    -fx-pref-width: 100px;
+    -fx-pref-height: 50px;
+}

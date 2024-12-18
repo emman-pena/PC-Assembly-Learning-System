@@ -1,0 +1,45 @@
+.label {
+    
+    -fx-background-radius: 5px;
+    -fx-background-color:  #152a47;
+    -fx-effect: dropshadow(gaussian, #15243a, 10, 0, 0, 5);
+    -fx-width: 95%;
+    -fx-height: 99%;
+}
+
+#accNameMenu {
+    
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.button {
+    
+    -fx-background-color: #152a47;
+    
+}
+
+.button:hover {
+    -fx-background-color:  #6CD0FF;
+    -fx-effect: dropshadow(gaussian, #6CD0FF, 10, 0, 0, 0);
+}
+
+/*
+#banner {
+    
+   border-radius: 25px; 
+}
+*/
+/*
+#libraryTabs {
+    
+    background: rgba(0,0,0,0);
+}
+*/
+/*
+#box:hover {
+    
+  -fx-color: rgba(255, 255, 255, 1)!important;
+  -fx-box-shadow: 0 5px 15px rgba(145, 92, 182, .4); 
+}
+*/
+

@@ -1,0 +1,16 @@
+.label {
+    
+    -fx-background-radius: 5px;
+    -fx-background-color:  #152a47;
+    -fx-pref-width: 250px;
+    -fx-pref-height: 300px;
+    -fx-effect: dropshadow(gaussian, #15243a, 10, 0, 0, 5);
+}
+
+.label:hover {
+    
+    -fx-background-color:  #6CD0FF;
+    -fx-pref-width: 250px;
+    -fx-pref-height: 300px;
+    -fx-effect: dropshadow(gaussian, #6CD0FF, 30, 0, 0, 0);
+}
